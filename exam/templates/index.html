@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>시작하는 법이 생각나지 않는다</h1>
+    <ol>
+        <li>python 가상환경을 만들고 아마 python ...virtualenv myenv 이런느낌</li>
+        <li>아 찾았다. python -m virtualenv myenv</li>
+        <li>가상환경을 실행시키고 Script/activate 뭐 이런 느낌</li>
+        <li>이것도 찾았다. source Script/activate</li>
+        <li>django를 설치하고 pip install django==버젼</li>
+        <li>pip2는 설치안되네. pip3 install django 이렇게 해야 깔림</li>
+        <li>프로젝트를 실행시킨다 무슨 manage.py startproject 이런거</li> 
+        <li>runserver</li>
+    </ol>
+    <h1>Coding Test Answer</h1>
+    <h2>RESTful 이란 무엇인가?</h2>
+    <p>
+        RESTful는 front-end를 신경쓰지않고 back-end 작업에만 집중하게 해줌으로써<br>
+        back-end 작업을 효율적으로 할 수 있다는데 사실 잘 이해못했다.<br> 
+        그래도 이해한대로 서술해보자면, back-end에서 작업을 하고 이를 serializer를 통해 json 형식으로 front-end로 데이터를 보낼 수 있다는 거 같다.<br>
+        최근에 RESTful의 필요성을 느낀 경험을 서술해보자면 php에서 exec를 통해 어떤 WEB API를 호출할 일이 있었는데<br>
+        php를 exec로 실행시키려면 php, apache 등이 모두 root 권한을 줘야하만 실행이 가능했다.<br>
+        그런데 이 WEB API가 RESTful api를 가지고 있다면 root 권한을 주지 않고도 실행시킬 수 있다고 했다.<br>
+        RESTful이 굉장히 유용한 거 같긴한데 제대로 개발해본 적이 없어서 잘은 모르겠다.<br>
+    </p>
+    <h2>serializer란 무엇인가?</h2>
+    <p>
+        POST 또는 GET 방식으로 통신을 할 때 파일을 json형식으로 변환해주는 편리한 기능을 제공한다. <br>
+        예를 들어, ajax(front-end)와 php(back-end)와 같이 다른 언어끼리 통신을 할 때 주고받는 데이터의 형식을 맞춰줘야 이를 parsing해서<br>
+        유용한 데이터로 활용할 수 있는데 주고받는 형식으로는 jquery, json, xml 등이 있다.<br>
+        Django REST는 이중에서도 특히 json으로 파일 형식을 변환해준다.<br>
+    </p>
+    <h2>여기다가 적는 글자는 세야지</h2>
+    <p>일단 모델 생성하는 거랑 POST/GET 받는 방식이 생각나지않으므로 글로 써보겠다.<br>
+        model.py에 내가 원하는 데이터 넣어서 makemigrate인가 해주면 그 모양의 db가 생겼던거 같다<br>
+        POST/GET은 저기 input 부분에 { 이거랑 % 이런거 써서 임포트 코드 뭐 이런식으로 넣으면 거기다가 정보가 보내지는데<br>
+        그걸 views.py에서 받아서 글자수 세고 글자수 세는 거는 count이런거 있으려나 무튼 글자수 파이썬 문법으로 세서<br>
+        render해줄때 map형식으로 보내주고 그 결과를 html에 띄워주면 됬던거 같음<br>
+        문법이 하나도 기억이 안남<br>
+    </p> 
+    <textarea name="input">
+    </textarea>
+    <input type="submit"/> 
+
+</body>
+</html>
